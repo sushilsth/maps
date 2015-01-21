@@ -1,0 +1,152 @@
+html , body
+{
+    
+    font-family: calibri;
+    background: #eee;
+}
+// for accordion menu and its pages
+     
+    .accordion-inner ul{margin-bottom: 0px;border-right: #000 solid 1px;}
+    .accordion-inner ul li
+    {
+        margin-left: -17%;
+        list-style: none;
+         padding: 0%;
+         display: block;
+      //   width: 75%;
+    height: auto;
+    background-color: #eeeeee; /* layer fill content */
+   
+    }
+    .accordion-inner ul li a{text-decoration: none;display: block;padding: 5%;}
+    .accordion-inner ul li:hover
+    {
+        
+    background-color: #ddd; /* layer fill content */
+   
+    }
+    
+    
+    #leftMenu .accordion-group {
+    margin-bottom: 0px;
+    border:0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}    
+
+#leftMenu .accordion-heading {
+  //  width: 65%;
+    
+    height: auto;
+    border-top: 1px solid #717171; /* inner stroke */
+    border-bottom: 1px solid #5A5A5A; /* inner stroke */
+    background-color: #353535; /* layer fill content */
+    background-image: -moz-linear-gradient(90deg, #595b59 0%, #616161 100%); /* gradient overlay */
+    background-image: -o-linear-gradient(90deg, #595b59 0%, #616161 100%); /* gradient overlay */
+    background-image: -webkit-linear-gradient(90deg, #595b59 0%, #616161 100%); /* gradient overlay */
+    background-image: linear-gradient(90deg, #595b59 0%, #616161 100%); /* gradient overlay */
+    list-style-type:none;
+}  
+
+#leftMenu .accordion-heading  a{ 
+    padding: 5%;
+    display: block;
+    color: #fff; /* text color */
+    text-shadow: 0 1px 0 #3b3b3b; /* drop shadow */
+    text-decoration:none;
+    font-weight:100;  
+}
+
+#leftMenu .accordion-heading  a:hover{  
+    color:#E13300;    
+}
+
+#leftMenu .accordion-heading .active {
+    
+    height: auto;
+    border: 1px solid #5b5b5b; /* inner stroke */
+    background-color: #353535; /* layer fill content */
+    background-image: -moz-linear-gradient(90deg, #4b4b4b 0%, #555 100%); /* gradient overlay */
+    background-image: -o-linear-gradient(90deg, #4b4b4b 0%, #555 100%); /* gradient overlay */
+    background-image: -webkit-linear-gradient(90deg, #4b4b4b 0%, #555 100%); /* gradient overlay */
+    background-image: linear-gradient(90deg, #4b4b4b 0%, #555 100%); /* gradient overlay */
+}
+            
+            #site-wrapper {
+    position: relative;
+    width: 100%;
+ //   margin-top: 4%;
+    background: #ecf0f1;
+    height:auto;
+}
+
+#site-canvas {
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    position: relative;
+    -webkit-transition: 300ms linear all;
+    transition: 300ms linear all;
+   
+    
+        -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+
+    -moz-transform: translateZ(0) translateX(0);
+    -ms-transform: translateZ(0) translateX(0);
+    -o-transform: translateZ(0) translateX(0);
+    -webkit-transform: translateZ(0) translateX(0);
+    transform: translateZ(0) translateX(0);
+
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+
+    -moz-transition: 300ms ease all;
+    -ms-transition: 300ms ease all;
+    -o-transition: 300ms ease all;
+    -webkit-transition: 300ms ease all;
+    transition: 300ms ease all;
+
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#site-menu {
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -300px;
+    background: #eee;
+    padding: 0px;
+}
+#site-wrapper.show-nav #site-canvas {
+    -moz-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    -o-transform: translateX(300px);
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+
+    -moz-transform: translateZ(0) translateX(300px);
+    -ms-transform: translateZ(0) translateX(300px);
+    -o-transform: translateZ(0) translateX(300px);
+    -webkit-transform: translateZ(0) translateX(300px);
+    transform: translateZ(0) translateX(300px);
+
+    -moz-transform: translate3d(300px, 0, 0);
+    -ms-transform: translate3d(300px, 0, 0);
+    -o-transform: translate3d(300px, 0, 0);
+    -webkit-transform: translate3d(300px, 0, 0);
+    transform: translate3d(300px, 0, 0);
+}
+// for accordion menu and its pages
