@@ -23,10 +23,12 @@
                         var lef = list_width - 20;
                                        
                             thiss.animate({
-                                left: += lef
+                                left: lef
+                                }, 1000, "linear", function(){
+                                    thiss.removeClass("arrow-right");
+                                    thiss.addClass("arrow-left");
                                 });
-                            thiss.removeClass("arrow-right");
-                            thiss.addClass("arrow-left");
+                            
                     
                        
                        
