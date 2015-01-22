@@ -1,11 +1,8 @@
-
 <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
-
 <div id="map"></div>
-
 <script type="text/javascript">
     
-            var locations = [['Narayangarh', 27.694694, 84.422601], ['Bharatpur', 27.683598, 84.433222], ['Sauraha', 27.575617, 84.491501],['Tandi', 27.622777, 84.511414],['Parsa', 27.609392, 84.602051],['Meghauli', 27.577443, 84.216500],['Madi', 27.413599, 84.363442] ];
+            var locations = [['Sita Gufa', 27.694694, 84.522601], ['Beshazari Lake', 27.694694, 84.622601], ['Lamo Jharana', 27.694694, 84.722601], ['Narayangarh', 27.694694, 84.422601], ['Bharatpur', 27.683598, 84.433222], ['Sauraha', 27.575617, 84.491501],['Tandi', 27.622777, 84.511414],['Parsa', 27.609392, 84.602051],['Meghauli', 27.577443, 84.216500],['Madi', 27.413599, 84.363442] ];
             var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 11,
                     center: new google.maps.LatLng(27.605397, 84.517963),
@@ -31,50 +28,47 @@
             })(marker, i));
     }
     
-    function hetauda() {
+    function narayangarh() {
         var latLng = new google.maps.LatLng(27.418540, 85.028587);
         map.setZoom(17);
         map.panTo(latLng);
     }
-    function kawasoti() {
+    function bharatpur() {
         var latLng = new google.maps.LatLng(27.646315, 84.130455);
         map.setZoom(17);
         map.panTo(latLng);
     }
-    function parsa() {
+    function tandi() {
         var latLng = new google.maps.LatLng(27.612049, 84.570288);
         map.setZoom(17);
         map.panTo(latLng);
     }
-    function tadi() {
+    function parsa() {
         var latLng = new google.maps.LatLng(27.62190,84.51591);
         map.setZoom(17);
         map.panTo(latLng);
     }
-    function kath() {
+    function sauraha() {
         var latLng = new google.maps.LatLng(27.701252, 85.333675);
         map.setZoom(17);
         map.panTo(latLng);
     }
-    function naran() {
+    function meghauli() {
         var latLng = new google.maps.LatLng(27.692958, 84.423811);
         map.setZoom(17);
         map.panTo(latLng);
     }
-    function but() {
+    function madi() {
         var latLng = new google.maps.LatLng(27.700810, 83.451226);
         map.setZoom(17);
         map.panTo(latLng);
     }
-    function viewall() {
+    function previous() {
         var latLng = new google.maps.LatLng(28.3, 84);
         map.setZoom(7);
         map.panTo(latLng);
     }
 </script>
 <style>
-    #map{width: 100%; margin: 0% 2% 0.5% 0%; height: 1000px; float: left;}
- #ullist_list{width: 100%; float: left; margin: 0.5% 0% 0% 0%; padding: 1% 0% 0% 15%; }
- #ullist_list ul {list-style-type: none; }
-  .map-canvas:hover, .map-canvas-kathmandu:hover, .map-canvas-narayanghat:hover, .map-canvas-butwal:hover {color: #880000;}
+    #map{width: 100%; margin: 0% 2% 0.5% 0%; height: 1000px;}
     </style>

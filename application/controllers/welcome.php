@@ -15,5 +15,6 @@ class Welcome extends CI_Controller {
             
 		$this->load->view('homepage');
                 $this->load->view('templates/mapBody');
+                $this->load->view('templates/footer');
 	}
 }
