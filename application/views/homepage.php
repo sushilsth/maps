@@ -101,7 +101,7 @@ margin: 0;
                  
         <div id="menu" style="min-height: 100%;display: none;position: absolute;z-index: 10;width: 100%;">
             <div id="list" style="width: 20%;background: #fff;position: absolute;z-index: 11;overflow-y: scroll;">
-            <ul class="list-group" style="border-radius: 0px;">
+            <ul class="list-group" style="border-radius: 0px;font-size: 20px;font-weight: 100;">
                 <li class="list-group-item">Sauraha</li>
                 <li class="list-group-item">Kasara</li>
                 <li class="list-group-item">Kankali samudhyak baan</li>
