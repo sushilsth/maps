@@ -14,8 +14,6 @@ class Welcome extends CI_Controller {
 	{
             
 		$this->load->view('homepage');
+                $this->load->view('templates/mapBody');
 	}
 }
-
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
