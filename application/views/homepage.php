@@ -12,17 +12,36 @@
             $(document).ready(function(){
                 
                  $("#toggle").live("click" , function() {
+                     var thiss = $(this);
                    var b = $("#menu").hasClass('animated fadeOutLeft'); 
                    var a = $("#menu").hasClass('animated fadeInLeft');
                    if(a===false) {
                        $("#menu").removeClass("animated fadeOutLeft");
                        $("#menu").css("display","block");
                        $("#menu").addClass('animated fadeInLeft');
+                       var list_width = $("#list").width();
+                        var lef = list_width - 20;
+                                       
+                            thiss.animate({
+                                left: lef
+                                }, 1000, "linear", function(){
+                                    thiss.removeClass("arrow-right");
+                                    thiss.addClass("arrow-left");
+                                });
+                            
+                    
+                       
+                       
                    }
                    else if(a===true){             
                    $("#menu").removeClass("animated fadeInLeft");
                    $("#menu").addClass('animated fadeOutLeft');
-                   setTimeout(function(){ $("#menu").css("display","none"); }, 1000);
+                    setTimeout(function(){                   
+                        $("#menu").css("display","none"); 
+                    }, 1000);
+                    $(this).css("left", 0);
+                    $(this).removeClass("arrow-left");
+                    $(this).addClass("arrow-right");  
                    }
                    
                    else if(b===false) {   
@@ -37,7 +56,9 @@
                    else {
                        
                    }
-        });    
+        });  
+        
+        
      });
        
         </script>
@@ -53,12 +74,12 @@ margin: 0;
 .arrow-left {
 	width: 0; 
 	height: 0; 
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-	border-right:10px solid blue; 
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-right:20px solid blue; 
         position: absolute;
         z-index: 999;
-        top: 50%;
+        top: 45%;
 }
 .arrow-right {
 	width: 0; 
@@ -68,7 +89,7 @@ margin: 0;
 	border-left: 20px solid blue;
         position: absolute;
         z-index: 999;
-        top: 50%;
+        top: 45%;
 }
     </style>
 
@@ -79,8 +100,8 @@ margin: 0;
                <div class="arrow-right" id="toggle" title="Toggle Menu"></div>   
                  
         <div id="menu" style="min-height: 100%;display: none;position: absolute;z-index: 10;width: 100%;">
-        <div style="width: 20%;background: #fff;position: absolute;z-index: 11;overflow-y: scroll;">
-            <ul class="list-group" style="border-radius: 0px;">
+            <div id="list" style="width: 20%;background: #fff;position: absolute;z-index: 11;overflow-y: scroll;">
+            <ul class="list-group" style="border-radius: 0px;font-size: 20px;font-weight: 100;">
                 <li class="list-group-item">Sauraha</li>
                 <li class="list-group-item">Kasara</li>
                 <li class="list-group-item">Kankali samudhyak baan</li>
